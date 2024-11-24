@@ -1,0 +1,207 @@
+/* General Reset and Layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #89ecbb;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Hide the default file input button */
+input[type="file"] {
+    display: none;
+    /* Hides the default file input button */
+}
+
+/* Custom "Choose File" button */
+.custom-file-upload {
+    display: inline-block;
+    background-color: #89ecbb;
+    color: rgb(0, 0, 0);
+    padding: 28px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    max-width: 350px;
+    margin-top: 10px;
+}
+
+/* Hover effect for the custom button */
+.custom-file-upload:hover {
+    background-color: #89ecbb;
+    transform: Scale(1.1);
+    /* Slight lift effect */
+}
+
+/* Active state for the custom button */
+.custom-file-upload:active {
+    background-color: #89ecbb;
+    transform: Scale(1.1);
+    /* Pressed effect */
+}
+
+/* Display the selected file name */
+.file-name {
+    display: block;
+    font-size: 14px;
+    color: #00ff88;
+    margin-top: 10px;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Container for the file input */
+.file-input-container {
+    text-align: center;
+    color: #00ff88;
+    margin-top: 20px;
+}
+
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #00ff88;
+    text-align: center;
+}
+
+div {
+    background-color: rgb(0, 0, 0);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    text-align: left;
+}
+
+/* Form and Fieldset Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+fieldset {
+    border: 1px solid #000000;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #000000;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    color: #89ecbb;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+/* Label and Input Styling */
+label {
+    font-size: 16px;
+    color: #89ecbb;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #fafafa;
+    transition: all 0.3s ease;
+}
+
+/* Submit Button Styling */
+button[type="submit"] {
+    background: linear-gradient(145deg, #89ecbb, #89ecbb);
+    /* Gradient background */
+    color: rgb(0, 0, 0);
+    padding: 28px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 350px;
+    margin: 20px auto 0;
+    box-shadow: 0px 5px 15px rgba(0, 128, 0, 0.2);
+    /* Soft shadow */
+}
+
+/* Hover Effect */
+button[type="submit"]:hover {
+    background: linear-gradient(145deg, #89ecbb, #89ecbb);
+    /* Hover gradient */
+    transform: Scale(1.1);
+    /* Lift effect */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    /* Stronger shadow on hover */
+}
+
+/* Active Button State */
+button[type="submit"]:active {
+    background: #89ecbb;
+    /* Solid color on click */
+    transform: Scale(1.1);
+    /* Button depression effect */
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+    /* Softer shadow when pressed */
+}
+
+/* Focus Effect */
+button[type="submit"]:focus {
+    outline: none;
+    /* Remove default focus outline */
+    border: 2px solid #89ecbb;
+    /* Green border on focus */
+}
+
+#resumeOutput {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 5px solid #00ff88;
+    border-radius: 8px;
+    background-color: #89ecbb;
+    box-shadow: 0 8px 16px #89ecbb;
+}
+
+#resumeOutput h2 {
+    color: #000000;
+}
+
+.profilePicture {
+    display: block;
+    margin: 0 auto;
+    border: 2px #00ff88;
+    box-shadow: 0 8px 16px rgb(0, 0, 0);
+    border-radius: 500%;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
